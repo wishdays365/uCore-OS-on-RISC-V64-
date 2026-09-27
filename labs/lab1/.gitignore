@@ -1,0 +1,18 @@
+# build artifacts
+obj/
+bin/
+*.o
+*.d
+!libs/__divlu.o
+!libs/__remlu.o
+!libs/__divwu.o
+!libs/__remwu.o
+
+# QEMU output
+*.log
+
+# editor
+*.swp
+*.swo
+.vscode/
+tags

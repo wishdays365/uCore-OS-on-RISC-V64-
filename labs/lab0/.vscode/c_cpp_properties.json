@@ -1,0 +1,35 @@
+{
+    "configurations": [
+        {
+            "name": "SW64",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/home/chao/sw-lab/swgcc710-cross-6b-9916/usr/bin/sw_64sw6b-sunway-linux-gnu-gcc",
+            "cStandard": "gnu99",
+            "cppStandard": "c++11",
+            "defines": [
+                "__SW64__",
+                "__SW_64SW6B_SUNWAY_LINUX_GNU__"
+            ],
+            "includePath": [
+                "${workspaceFolder}",
+                "${workspaceFolder}/libs",
+                "${workspaceFolder}/kern/debug",
+                "${workspaceFolder}/kern/driver",
+                "${workspaceFolder}/kern/trap",
+                "${workspaceFolder}/kern/libs",
+                "${workspaceFolder}/kern/mm",
+                "${workspaceFolder}/kern/arch",
+                "/home/chao/sw-lab/swgcc710-cross-6b-9916/usr/lib/gcc/sw_64sw6b-sunway-linux-gnu/7.1.0/include",
+                "/home/chao/sw-lab/swgcc710-cross-6b-9916/usr/sw_64sw6b-sunway-linux-gnu/include"
+            ],
+            "browse": {
+                "path": [
+                    "${workspaceFolder}",
+                    "${workspaceFolder}/libs",
+                    "${workspaceFolder}/kern"
+                ]
+            }
+        }
+    ],
+    "version": 4
+}

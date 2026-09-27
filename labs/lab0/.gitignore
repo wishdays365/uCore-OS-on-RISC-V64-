@@ -1,0 +1,21 @@
+# 构建产物 (obj/ 和 bin/ 下的 .o 文件)
+obj/
+bin/
+*.d
+
+# 但不忽略 libs 下的预编译除法库
+!libs/__divlu.o
+!libs/__remlu.o
+!libs/__divwu.o
+!libs/__remwu.o
+
+# QEMU 输出
+*.log
+
+# 编辑器
+*.swp
+*.swo
+.vscode/
+
+# ctags 索引文件 (需重新生成)
+tags

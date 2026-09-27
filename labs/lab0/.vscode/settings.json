@@ -1,0 +1,17 @@
+{
+    "file.associations": {
+        ".S": "asm"
+    },
+    "C/C++_autocomplete": {
+        "autoComplete": "disabled",
+        "errorSinks": {
+            "delayEnabled": false
+        }
+    },
+    "editor.formatOnSave": false,
+    "files.exclude": {
+        "obj": true,
+        "bin": true,
+        ".vscode": true
+    }
+}

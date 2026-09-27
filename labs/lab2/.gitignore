@@ -1,0 +1,13 @@
+obj/
+bin/
+*.o
+*.d
+*.log
+!libs/__divlu.o
+!libs/__remlu.o
+!libs/__divwu.o
+!libs/__remwu.o
+*.swp
+*.swo
+.vscode/
+tags

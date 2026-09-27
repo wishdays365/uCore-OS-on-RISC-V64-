@@ -1,0 +1,47 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build lab0",
+            "type": "shell",
+            "command": "make V=1",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "clean lab0",
+            "type": "shell",
+            "command": "make clean",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": "build"
+        },
+        {
+            "label": "run in QEMU",
+            "type": "shell",
+            "command": "qemu-system-sw64 -smp 1 -machine core3 -m 512m -kernel ./bin/kernel -monitor stdio",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "build + run QEMU",
+            "type": "shell",
+            "command": "make V=1 && qemu-system-sw64 -smp 1 -machine core3 -m 512m -kernel ./bin/kernel -monitor stdio",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": "test"
+        }
+    ]
+}
